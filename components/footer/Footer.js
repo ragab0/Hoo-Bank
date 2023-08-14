@@ -21,7 +21,7 @@ export default function Footer() {
     <footer id="library" className=" bg-mainSection mt-[150px]">
       <div className="container pt-[150px] pb-[75px]">
         <header className="text-center">
-          <h2 className="mx-auto max-w-4xl text-6xl ">
+          <h2 className="mx-auto max-w-4xl text-4xl lg:text-6xl ">
             Do you want to step in to the future before others
           </h2>
           <a href="#" aria-label="Click!" className="p-5 border-2 inline-block mt-[75px] mb-[40px] hover:opacity-80">Request Early Access</a>
@@ -31,7 +31,7 @@ export default function Footer() {
             </h3>
           </div>
         </header>
-        <div className="content flex justify-evenly flex-wrap mt-[150px]">
+        <div className="content grid sm:grid-cols-2 md:grid-cols-4 gap-y-8 mt-[150px]">
           {
             datas.map(({heading, items}, i) => (
               <div className={heading}>
@@ -40,7 +40,7 @@ export default function Footer() {
                   {
                     items.map((item, j) => (
                       <li key={j}>
-                        <a href="#" aria-label='click!'>{item}</a>
+                        <a href="#" aria-label='click!' className=" hover:opacity-80">{item}</a>
                       </li>
                     ))
                   }

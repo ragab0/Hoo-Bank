@@ -1,5 +1,7 @@
-import Image from "next/image";
+"use client";
+import { useState } from "react";
 import Logo from "@/assets/svgs/logo";
+import "./Header.css";
 
 const links = [
   {
@@ -18,12 +20,16 @@ const links = [
 ]
 
 export default function Header() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="container text-lg flex items-center gap-16 mt-12">
+    <header className="container text-lg flex items-center gap-16 mt-12 relative z-10">
         <a href="#">
           <Logo width={100} />
         </a>
-        <div className='menu flex w-full justify-between items-center'>
+        <span className=" lg:hidden ms-auto p-2 hover:opacity-80 rotate-90" onClick={() => setIsOpen(true)}>|||</span>
+        <div className={`menu hidden lg:flex w-full justify-between items-center ${isOpen ? "opened": ""}`} onClick={() => setIsOpen(false)}>
           <nav>
             <ul className="btns flex items-center gap-4">
               {links.map(({name, link}, i) => (

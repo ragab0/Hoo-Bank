@@ -23,7 +23,7 @@ module.exports = {
       },
       backgroundImage: {
         "mainGradient": 
-          "linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%)"
+          "linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%)",
       },
       fontFamily: {
         ubuntu: ['ubuntu', 'var(--font-ubuntu)', '-apple-system', 'sans-serif'],

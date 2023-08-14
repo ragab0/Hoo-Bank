@@ -4,11 +4,11 @@
 
 @keyframes main-animation {
     10% {
-        transform: scale(1.1, 1.1) rotate3d(1, 1, 1, 10deg);
+        transform: scale(1.1, 1.1) rotate3d(1, 2, 1, 5deg);
     } 20% {
         transform: scale(.8, .8) rotate3d(0, 0, 0, 15deg);
     } 80% {
-        transform: scale(1.1, 1.1) rotate3d(30, 30, 5, -15deg);
+        transform: scale(1.1, 1.1) rotate3d(50, 50, 5, -15deg);
     } 81% {
         transform: scale(30, 30) rotate3d(30, 30, 5, 45deg);
     } 83% {

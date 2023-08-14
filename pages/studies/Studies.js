@@ -13,7 +13,7 @@ const data = [Blog1, Blog2, Blog3, Blog4, Blog5];
 export default function Studies() {
   return (
     <section id='studies' className='studies-section container'>
-      <h2 className=' text-center my-[150px] text-6xl max-w-[700px] mx-auto'>A lot is happening, We are blogging about it.</h2>
+      <h2 className=' text-center my-[150px] text-4xl lg:text-6xl max-w-[700px] mx-auto'>A lot is happening, We are blogging about it.</h2>
       <div className='flex flex-wrap justify-center '>
         {
           data.map((b, i) => (

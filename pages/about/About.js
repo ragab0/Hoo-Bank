@@ -8,7 +8,7 @@ export default function About() {
         <div className=' mt-32'>
           <h2 className=' max-w-md mx-auto mb-4'>The possibilities are beyond your imagination</h2>
           <a href='#' aria-label="click!" className='btn text-secondClr'>Explore The Library</a>
-          <div className='grid grid-cols-3 gap-4 mt-16'>
+          <div className='grid lg:grid-cols-3 gap-4 mt-16'>
             <article>
               <h3>Chatbots</h3>
               <p className="texter">We so opinion friends me message as delight. Whole front do of plate heard oh ought. </p>

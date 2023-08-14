@@ -28,7 +28,7 @@ const companies = [
 export default function Companies() {
   return (
     <section className="container my-32">
-      <ul className="btns flex gap-12 justify-center">
+      <ul className="btns flex max-lg:flex-col max-lg:items-center gap-x-12 gap-y-4 justify-center">
         {
           companies.map(({name, src}, i) => (
             <li key={i} aria-label={name}>
