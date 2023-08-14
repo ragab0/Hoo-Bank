@@ -1,0 +1,14 @@
+.openai-section .feature {
+    @apply grid grid-cols-2;
+}
+
+.openai-section article {
+    @apply flex gap-4 mb-8 justify-between items-start;
+}
+.openai-section article p {
+    @apply max-w-xs;
+}
+
+.openai-section h3 {
+    @apply max-w-[170px] text-lg before:left-0 before:translate-x-0;
+}

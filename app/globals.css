@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --text-main: rgba(129, 175, 221, 1);
+  --text-main-lighted: rgba(113, 229, 255, 1);
+  --text-fire: rgba(255, 138, 113, 1);
+
+
+  --ui-section: rgba(4, 44, 84, 1);
+  --ui-section-darked: rgba(3, 27, 52, 1);
+  --ui-blur-1: rgba(0, 40, 83, 1);
+  --ui-blur-2: rgba(7, 45, 86, 1);
+  --ui-blur-3: rgba(7, 50, 95, 1);
+  --ui-blur-sky-1: rgba(15, 66, 121, 1);
+  --ui-blur-sky-2: rgba(27, 120, 222, 1);
+
+}
+
+
+::selection {
+  @apply !bg-white text-black;
+  -webkit-text-fill-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white rounded-2xl hover:bg-white/90 active:bg-white/80;
+}
+
+*,
+::before,
+::after {
+  @apply duration-[50ms] ease-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-ubuntu text-white bg-black;
+}
+
+body h1,h2, h3,h4,h5,h6 {
+  @apply capitalize font-bold !leading-[1.25];
+}
+
+body h1, h2 {
+  background-image: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body h1 {
+  @apply text-7xl mt-12 ;
+}
+
+body h2 {
+  @apply text-4xl;
+}
+
+body h3 {
+  @apply text-2xl relative mb-5;
+}
+
+body h4 {
+  @apply text-lg relative mb-5;
+}
+
+
+body h4::before,
+body h3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-image: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+}
+
+
+.container {
+  @apply mx-auto px-4;
+}
+
+.btn,
+.btns li {
+  @apply p-2 font-medium hover:opacity-80 cursor-pointer;
+}
+.btn-primary {
+  @apply cursor-pointer font-medium py-4 px-8 bg-red-600 hover:bg-red-700 text-white text-lg;
+}
+
+.texter {
+  @apply text-mainClr leading-8;
+}
+
+
+
+/* Aria label*/
+[aria-label] {
+  position: relative;
+}
+
+[aria-label]::before, 
+[aria-label]::after {
+  @apply absolute bottom-full left-1/2 -translate-x-1/2 w-max
+         capitalize text-xs text-black opacity-0;
+  content: "";
+  transition: all 0.18s ease-out 0.18s;
+  pointer-events: none; /*isolate it as different element not related ot it*/
+}
+
+[aria-label]::before {
+  @apply py-2 px-4 mb-[5px] rounded-[4px] bg-white;
+  content: attr(aria-label);
+}
+[aria-label]::after {
+  @apply border-[5px] mb-[-5px] border-transparent border-t-white;
+}
+
+[aria-label]:hover::before,
+[aria-label]:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -5px);
+}
