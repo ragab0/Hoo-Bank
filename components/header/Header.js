@@ -7,15 +7,12 @@ const links = [
   {
     name: "home",
   },{
-    name: "what is GPT?",
-    link: "GPT",
+    name: "about us",
+    link: "about",
   },{
-    name: "open AI",
-    link: "open_ai"
+    name: "features",
   },{
-    name: "studies",
-  },{
-    name: "library",
+    name: "solution",
   },
 ]
 
