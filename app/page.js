@@ -1,21 +1,18 @@
 import Hero from '@/pages/hero/Hero';
-import Footer from '@/components/footer/Footer';
-import Image from 'next/image';
-import Companies from '@/components/companies/Companies';
+import Footer from '@/components/Footer';
 import About from '@/pages/about/About';
-import OpenAI from '@/pages/open_ai/OpenAI';
-import Cta from '@/components/cta/Cta';
-import Studies from '@/pages/studies/Studies';
+import Companies from '@/components/Companies';
+import TryService from '@/components/TryService';
+import Features from '@/pages/features/Features';
 
 export default function Home() {
   return (
-    <main id='home'>
+    <main id='home' className='container'>
       <Hero />
-      <Companies />
       <About />
-      <OpenAI />
-      <Cta />
-      <Studies />
+      <Features />
+      <Companies />
+      <TryService />
       <Footer />
     </main>
   )
