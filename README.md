@@ -1,18 +1,11 @@
-# GPT-3: Welcome
+# Hoo-Bank: Welcome
 
-A Modern website where you can know more about GPT-3, about the future. created in React and nextjs to practice on them specially on
+A Modern website, created in React and nextjs to practice on them.
+**Take care** It is The Next Generation Payment Method, you can now handle your money in easy way.
 
-- React Functional components and their reusability
-- React file and folder structure
-- From soft and pleasant animations to complex gradients
-- Perfectly placed media queries for satisfactory responsiveness covering almost devices
+![hoo-bank-img](./assets/hoo-bank.png)
 
-
-## Did you know
-- The Possibilities Are Beyond Your Imagination
-- The Future Is Now And You Just Need To Realize It. Step Into Future Today & Make It Happen.
-
-## built with
+## Technologies and tools
 - HTML (JSX)
 - CSS
 - JavaScript
@@ -22,9 +15,7 @@ A Modern website where you can know more about GPT-3, about the future. created 
 - Figma
 
 ## Sources
-
-### [The academy site](https://resource.jsmasterypro.com/)
-### [Main Live Site](https://gpt3-jsm.com/)
-### [Tutorial video](https://www.youtube.com/watch?v=F627pKNUCVQ&t=225s&pp=ygUfYnVpbGQgYW5kIGRlcGxveSA0IG1vZGVybiByZWFjdA%3D%3D)
-
-### Github repo, code and assets: "";
+Sources that may be will help you
+- The academy [site](https://resource.jsmasterypro.com/)
+- Main Live Site: [#](#)
+- Tutorial video [youtube](https://www.youtube.com/watch?v=F627pKNUCVQ&t=225s&pp=ygUfYnVpbGQgYW5kIGRlcGxveSA0IG1vZGVybiByZWFjdA%3D%3D)
