@@ -1,24 +1,4 @@
-import Star from "@/assets/svgs/Star";
-import Shield from "@/assets/svgs/Shield";
-import Send from "@/assets/svgs/Send";
-import Image from "next/image";
-
-
-const data = [
-  {
-    Logo: Star,
-    heading: "Rewards",
-    desc: "The best credit cards offer some tantalizing combinations of promotions and prizes"
-  },{
-    Logo: Shield,
-    heading: "100% Secured",
-    desc: "We take proactive steps make sure your information and transactions are secure."
-  },{
-    Logo: Send,
-    heading: "Balance Transfer",
-    desc: "A balance transfer credit card can save you a lot of money in interest charges."
-  },
-]
+import { aboutBuisnes } from "@/assets/data/data"
 
 
 export default function AboutHeader() {
@@ -31,7 +11,7 @@ export default function AboutHeader() {
       </div>
       <div className="md:justify-self-end md:max-w-[470px]">
         {
-          data.map(({Logo, heading, desc}, i) => (
+          aboutBuisnes.map(({Logo, heading, desc}, i) => (
             <figure key={i} className="bg-black-gradient p-6 px-5 rounded-2xl flex items-center gap-5 mb-5">
               <div className="p-3 bg-[#09977C20] rounded-full">
                 <Logo width={40} height={40} />

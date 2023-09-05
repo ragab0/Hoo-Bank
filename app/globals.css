@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --clr-primary: #00040f;
   --clr-secondary: #00f6ff;
@@ -30,48 +29,69 @@
   @apply transition-all;
 }
 
-html {
-  scroll-behavior: smooth !important;
-}
 
-body {
-  @apply text-white bg-black;
-  font-family: Ubuntu, -apple-system, sans-serif;
-}
+@layer base {
 
-p, a {
-  @apply text-dimWhite leading-[1.7];
-}
+  html {
+    scroll-behavior: smooth !important;
+  }
 
-body h1,h2, h3,h4,h5,h6 {
-  @apply capitalize font-bold;
-}
+  body {
+    @apply text-white bg-black;
+    font-family: Ubuntu, -apple-system, sans-serif;
+  }
 
+  p {
+    @apply text-dimWhite leading-[1.7];
+  }
 
-body h1 {
-  @apply  text-5xl md:text-7xl !leading-[1.4] mt-4;
-}
-
-body h2 {
-  @apply  text-3xl md:text-5xl !leading-[1.4];
-}
-
-body h3 {
-  @apply text-xl md:text-2xl relative mb-5;
-}
-
-body h4 {
-  @apply text-lg;
-}
-
-.container {
-  @apply mx-auto px-5 max-w-[1440px];
-}
+  a {
+    @apply text-dimWhite leading-[1.7] hover:text-white/80 active:text-white;
+  }
 
 
-button {
-  @apply hover:opacity-90 active:scale-90;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply capitalize font-bold;
+  }
+
+  h1 {
+    @apply  text-5xl md:text-7xl !leading-[1.4] mt-4;
+  }
+
+  h2 {
+    @apply  text-3xl md:text-5xl !leading-[1.4];
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl relative mb-5;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  button,
+  .btn {
+    @apply hover:opacity-90 active:scale-90;
+  }
 }
-.btn-primary {
-  @apply py-5 px-8 text-primary bg-secondary text-lg font-medium rounded-xl cursor-pointer hover:opacity-90 active:scale-90;
+
+
+@layer components {
+  .container {
+    @apply mx-auto px-5 max-w-[1440px];
+  }
+
+  .btn-primary {
+    @apply py-5 px-8 text-primary bg-secondary text-lg font-medium rounded-xl cursor-pointer 
+    hover:opacity-90 active:scale-90;
+  }
 }
+
+
+
