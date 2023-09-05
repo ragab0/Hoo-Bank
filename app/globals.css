@@ -7,6 +7,9 @@
   --clr-secondary: #00f6ff;
   --clr-dimWhite: rgba(255, 255, 255, 0.7);
   --clr-dimBlue: rgba(9, 151, 124, 0.1);
+
+  --black-gradient: linear-gradient(144.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
 
@@ -60,7 +63,7 @@
   }
 
   h1 {
-    @apply  text-5xl md:text-7xl !leading-[1.4] mt-4;
+    @apply  text-4xl md:text-5xl xl:text-7xl !leading-[1.4] mt-4;
   }
 
   h2 {
@@ -94,4 +97,32 @@
 }
 
 
+@layer utilities {
+  /* Main text gradient */
+  .text-gradient {
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,#def9fa 0.89%,#bef3f5 17.23%,#9dedf0 42.04%,#7de7eb 55.12%,#5ce1e6 71.54%,#33bbcf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
+  /* Main bg gradient */
+  .bg-blue-gradient {
+      background: linear-gradient(157.81deg,#def9fa -43.27%,#bef3f5 -21.24%,#9dedf0 12.19%,#7de7eb 29.82%,#5ce1e6 51.94%,#33bbcf 90.29%);
+  }
+
+  /* In hero section */
+  .bg-discount-gradient {
+      background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  }
+    
+  /* features and cards*/
+  .bg-black-gradient {
+      background: linear-gradient(144.39deg,#ffffff -278.56%,#6d6d6d -78.47%,#11101d 91.61%);
+  }
+
+  .blue__gradient {
+    background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+    filter: blur(123px);
+  }
+}

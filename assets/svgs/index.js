@@ -16,14 +16,6 @@ import Twitter from "./social/twitter";
 import Linkedin from "./social/linkedin";
 
 
-export const socialSvgs = [
-  Facebook,
-  Instagram,
-  Twitter,
-  Linkedin,
-]
-
-
 module.exports = {
   Apple,
   ArrowUp,
@@ -36,4 +28,8 @@ module.exports = {
   Send,
   Shield,
   Star,
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin,
 }

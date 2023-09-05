@@ -1,15 +1,4 @@
-const statics = [
-  {
-    number: "3800+",
-    text: "User Active",
-  },{
-    number: "230+",
-    text: "TRUSTED BY COMPANY",
-  },{
-    number: "$230M+",
-    text: "TRANSACTION",
-  },
-]
+import { statics } from "@/assets/data/data";
 
 
 export default function Statisc() {
@@ -19,7 +8,7 @@ export default function Statisc() {
         {
           statics.map(({number, text}, i) => (
             <li key={i} className="flex items-center gap-5">
-              <span className=" text-[40px] font-semibold">{number}</span>
+              <h4 className=" text-[40px]">{number}</h4>
               <span className="text-gradient text-xl text-mainClr">{text}</span>
             </li>
           ))
