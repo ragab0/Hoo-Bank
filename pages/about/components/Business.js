@@ -1,5 +1,4 @@
 import { business } from "@/assets/data/data";
-import BusinessFeature from "./BusinessFeature";
 
 export default function Business() {
   return (
@@ -16,13 +15,26 @@ export default function Business() {
         </button>
       </div>
       <div className="md:justify-self-end md:max-w-[470px]">
-        {business.map((bus, i) => (
+        {business.map(({ heading, Logo, desc }, i) => (
           <div
+            key={i}
             data-aos="fade-in"
             data-aos-delay={500 + i * 200}
             data-aos-anchor-placement={i !== 0 ? "top-bottom" : undefined}
           >
-            <BusinessFeature key={i} id={i} bus={bus} />
+            <figure
+              className={`${
+                i === 1 ? "bg-black-gradient" : ""
+              } hover:bg-black-gradient p-6 px-5 rounded-2xl flex items-center gap-5 mb-5`}
+            >
+              <button className="p-3 bg-[#09977C20] rounded-full hover:bg-[#09977d60]">
+                <Logo width={40} height={40} />
+              </button>
+              <figcaption>
+                <h4 className="mb-3">{heading}</h4>
+                <p>{desc}</p>
+              </figcaption>
+            </figure>
           </div>
         ))}
       </div>
