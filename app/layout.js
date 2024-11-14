@@ -1,21 +1,18 @@
-import './globals.css';
-
+import "./globals.css";
+import AosContainer from "@/components/Aos";
 
 export const metadata = {
-  title: "HooBank",
-  description: "The Next Generation Payment Method - Step Into Future Today & Make It Happen",
+  title: "HooBank - JavaScript Mastery Design",
+  description:
+    "A responsive landing page transformed from JavaScript Mastery Academy's Figma design. Built by Ragab",
   icon: "/",
-}
-
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-          {
-            children
-          }
-      </body>
+      <AosContainer />
+      <body className=" overflow-x-hidden">{children}</body>
     </html>
-  )
+  );
 }

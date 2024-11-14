@@ -15,7 +15,6 @@ import Instagram from "./social/instagram";
 import Twitter from "./social/twitter";
 import Linkedin from "./social/linkedin";
 
-
 module.exports = {
   Apple,
   ArrowUp,
@@ -32,4 +31,4 @@ module.exports = {
   Instagram,
   Twitter,
   Linkedin,
-}
+};

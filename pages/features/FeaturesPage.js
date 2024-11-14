@@ -1,8 +1,7 @@
-import Controls from "@/components/Controls";
-import Deals from "@/components/Deals";
-import Feedbacks from "@/components/Feedbacks";
-import "./Features.css";
-
+import "./FeaturesPage.css";
+import Controls from "./components/Controls";
+import Deals from "./components/Deals";
+import Feedbacks from "./components/Feedbacks";
 
 export default function FeaturesPages() {
   return (
@@ -11,5 +10,5 @@ export default function FeaturesPages() {
       <Deals />
       <Feedbacks />
     </div>
-  )
+  );
 }

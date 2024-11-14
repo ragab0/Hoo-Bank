@@ -1,14 +1,14 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Statisc from "@/components/Statisc";
-
+import "./HomePage.css";
+import Navbar from "@/components/Navbar";
+import Header from "./components/Header";
+import Statisc from "./components/Statisc";
 
 export default function HomePage() {
   return (
     <div className="home-page">
+      <Navbar />
       <Header />
-      <Hero />
       <Statisc />
     </div>
-  )
+  );
 }
